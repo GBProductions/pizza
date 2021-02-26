@@ -13,9 +13,8 @@ $(document).ready(function() {
     $("form#order").submit(function(event) {
         event.preventDefault();
         let name = $("input#name").val();
-        let size = $("input#size").val();
-        let meat = $("input#meat").val();
+        let size = $("#size").val();
+        let meat = $("#meat").val();
         
-        console.log(typeof name, typeof size, typeof meat);
     })
 });
