@@ -10,6 +10,13 @@ Web application will take in user input, and return different prices dependent o
 
 ## Specs
 
+Describe:
+Test:
+Expect:
+
+Test:
+Expect:
+
 ## Setup/Installation Requirements
 
 
