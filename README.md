@@ -10,9 +10,9 @@ Web application will take in user input, and return different prices dependent o
 
 ## Specs
 
-Describe:
-Test:
-Expect:
+Describe: Pizza.prototype.order()
+Test: Add ingrediant prices together and return price.
+Expect: order(4,5,6).toEqual(15)
 
 Test:
 Expect:

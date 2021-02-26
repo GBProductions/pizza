@@ -5,6 +5,9 @@ function Pizza(size, meat) {
     this.meat = meat;
 }
 
+Pizza.prototype.price = function() {
+    
+}
 
 //User Logic
 
