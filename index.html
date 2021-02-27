@@ -11,7 +11,7 @@
 </head>
 <body>
     <div class="jumbotron">
-        <h1>Mario's Pizza Parlor</h1>
+        <img src="img/mario.jpg" alt="Mario with pizza" id="mario">
     </div>
     <div class="container">
         <h2>Let us order your pizza!</h2>
@@ -22,24 +22,30 @@
             <label>First: Choose a size!</label>
             <select class="form-control" id="size">
                 <option></option>
-                <option value="Small4">Small</option>
-                <option value="Medium5">Medium</option>
-                <option value="Large6">Large</option>
-                <option value="Xtra-Large7">Xtra Large</option>
+                <option value="small4">Small</option>
+                <option value="medium5">Medium</option>
+                <option value="large6">Large</option>
+                <option value="xtra-large7">Xtra Large</option>
             </select>
             <br>
             <label>Second: Choose a meat topping!</label>
             <select class="form-control" id="meat">
                 <option></option>
-                <option value="None0">None</option>
-                <option value="Pepperoni1">Pepperoni</option>
-                <option value="Sausage1">Sausage</option>
-                <option value="Ham1">Ham</option>
-                <option value="Chicken2">Chicken</option>
+                <option value="nothing0">None</option>
+                <option value="pepperoni1">Pepperoni</option>
+                <option value="sausage1">Sausage</option>
+                <option value="ham1">Ham</option>
+                <option value="chicken2">Chicken</option>
             </select>
             <br>
             <button class="submit" class="btn-success">Submit</button>
         </form>
+        <div>
+            <p>Final Price:<span id="finalPrice"></span></p>
+        </div>
+        <div>
+            <p><span id="finalOrder"></span></p>
+        </div>
     </div>
     
 </body>

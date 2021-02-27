@@ -34,6 +34,8 @@ $(document).ready(function() {
         let newPizza = new Pizza(nameInput, size, meat, sizeCost, meatCost);
         let finalPrice = newPizza.price();
         let finalOrder = newPizza.order();
-        console.log(finalPrice, finalOrder);
+
+        $("#finalPrice").text(" $" + finalPrice);
+        $("#finalOrder").text(finalOrder);
     })
 });
