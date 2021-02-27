@@ -12,8 +12,12 @@
 <body>
     <div class="jumbotron">
         <img src="img/mario.jpg" alt="Mario with pizza" id="mario">
+        <div class="center">
+            <h1>Mario's Pizza Parlor</h1>
+            <h4><i>Open <b>24/7.</b> Fast Delivery.</i></h4>
+        </div>
     </div>
-    <div class="container">
+    <div class="container" class="box">
         <h2>Let us order your pizza!</h2>
         <form id="order">
             <label for="name">Your Name</label>
@@ -28,7 +32,7 @@
                 <option value="xtra-large7">Xtra Large</option>
             </select>
             <br>
-            <label>Second: Choose a meat topping!</label>
+            <label >Second: Choose a meat topping!</label>
             <select class="form-control" id="meat">
                 <option></option>
                 <option value="nothing0">None</option>
@@ -38,14 +42,14 @@
                 <option value="chicken2">Chicken</option>
             </select>
             <br>
-            <button type="button" class="btn btn-danger">Submit</button>
-            <button class="btn btn-info"  onClick="window.location.reload();">Reset</button>
+            <button class="btn btn-danger" class="submit">Submit</button>
+            <button onClick="window.location.reload();" class="btn btn-info" >Reset</button>
         </form>
         <div>
-            <p><span id="finalPrice"></span></p>
+            <p class="box"><span id="finalPrice"></span></p>
         </div>
         <div>
-            <p><span id="finalOrder"></span></p>
+            <p class="box"><span id="finalOrder"></span></p>
         </div>
     </div>
     
