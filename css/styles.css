@@ -1,9 +1,13 @@
 body {
-    background-color: white;
+    background-image: url("../img/circle.jpg");
 }
 
 #mario {
     float: right;
     height: auto;
-    width: 300px;
+    width: 150px;
+}
+
+.hide {
+    display: none;
 }

@@ -12,7 +12,7 @@ Pizza.prototype.price = function() {
 };
 
 Pizza.prototype.order = function() {
-    return this.nameInput + " " + "you ordered a " + this.size + " pizza with " + this.meat + ".";
+    return this.nameInput + ", " + "you ordered a " + this.size + " pizza with " + this.meat + ".";
 };
 
 
@@ -35,7 +35,7 @@ $(document).ready(function() {
         let finalPrice = newPizza.price();
         let finalOrder = newPizza.order();
 
-        $("#finalPrice").text(" $" + finalPrice);
+        $("#finalPrice").text("Final Price: $" + finalPrice);
         $("#finalOrder").text(finalOrder);
     })
 });
