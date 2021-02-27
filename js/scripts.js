@@ -1,18 +1,19 @@
 //Business Logic
-function Pizza(size, meat, sizeCost, meatCost) {
+function Pizza(nameInput, size, meat, sizeCost, meatCost) {
+    this.nameInput = nameInput
     this.size = size;
     this.meat = meat;
     this.sizeCost = sizeCost;
     this.meatCost = meatCost;
 }
 
-Pizza.prototype.order = function() {
+Pizza.prototype.price = function() {
     return this.sizeCost + this.meatCost;
 };
 
-// Pizza.prototype.list = function() {
-//     return this.size + " " + this.meat;
-// };
+Pizza.prototype.order = function() {
+    return this.nameInput + " " + "you ordered a " + this.size + " pizza with " + this.meat + ".";
+};
 
 
 
@@ -21,7 +22,7 @@ Pizza.prototype.order = function() {
 $(document).ready(function() {
     $("form#order").submit(function(event) {
         event.preventDefault();
-        const nameInput = $("input#name").val().split("");
+        const nameInput = $("input#name").val();
         let sizeInput = $("#size").val().split("");
         let meatInput = $("#meat").val().split("");
         
@@ -30,8 +31,9 @@ $(document).ready(function() {
         const meat = meatInput.slice(0, -1).join('');
         const meatCost = parseInt(meatInput.slice(-1));
 
-        let newPizza = new Pizza(size, meat, sizeCost, meatCost);
-        let final = newPizza.order();
-        console.log(final);
+        let newPizza = new Pizza(nameInput, size, meat, sizeCost, meatCost);
+        let finalPrice = newPizza.price();
+        let finalOrder = newPizza.order();
+        console.log(finalPrice, finalOrder);
     })
 });
