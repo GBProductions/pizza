@@ -35,6 +35,7 @@ $(document).ready(function() {
         let finalPrice = newPizza.price();
         let finalOrder = newPizza.order();
 
+        $(".hide").show()
         $("#finalPrice").text("Final Price: $" + finalPrice);
         $("#finalOrder").text(finalOrder);
     })
