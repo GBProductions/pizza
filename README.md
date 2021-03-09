@@ -11,11 +11,14 @@ Web application will take in user input, and return different prices dependent o
 ## Specs
 
 Describe: Pizza
-Test: Add ingrediant prices together and return price.
-Expect: price(4,5,6).toEqual(15)
+
+Test: Add size price with meat price together and return total pizza price.
+    Small = 4
+    Pepperoni = 1
+Expect: price(4,1).toEqual(5)
 
 Test: Display final order and name.
-Expect: order(GB, small, pepperoni).toEqual("GB your ordered a small pizza with pepperoni.")
+Expect: order(GB, small, pepperoni).toEqual("GB you ordered a small pizza with pepperoni.")
 
 ## Setup/Installation Requirements
 
