@@ -1,7 +1,8 @@
 # _Pizza Parlor_
 
 #### _Website for pizza parlor. Order different pizza's and return prices._
-#### _February 26th 2021_
+#### _Created February 26th 2021_
+#### _Updated March 8th 2021_
 
 #### By _**Garrett Brown**_
 
